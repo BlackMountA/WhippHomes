@@ -4,4 +4,128 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
+  position: fixed;
+  background-color: #fff;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.cancel-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+.success-modal main img {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.success-modal main h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #3a4b69;
+}
+.success-modal main p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+
+  color: #000000;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.contact-navigation__link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  /* identical to box height */
+  margin-bottom: 1rem;
+  text-align: center;
+
+  color: #c28c00;
+  /* text-decoration: underline; */
+}
+
+@media (max-width: 1024px) {
+  .success-modal {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .success-modal {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .success-modal {
+    width: 80%;
+  }
+  .success-modal main h1 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .success-modal main p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .success-modal main img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .success-modal {
+    width: 80%;
+  }
+  .success-modal main h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .success-modal main p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 80%;
+  }
+  .contact-navigation__link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .success-modal main h1 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  .success-modal main p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    width: 100%;
+  }
+  .success-modal main img {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
 }

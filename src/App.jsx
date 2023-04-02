@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import Navbar from "./Components/Navbar/Nav";
 import Header from "./Components/Header/Header";
 import Features from "./Components/Features/Features";
@@ -8,44 +9,29 @@ import Footer from "./Components/Footer/Footer";
 
 import "./App.css";
 function App() {
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  // const [waitlist, setWaitList] = useState([]);
-  // const getWaitlistData = (data) => {
-  //   setWaitList((prev) => {
-  //     console.log(data);
-  //     return [data, ...prev];
-  //   });
-  // };
+  const [isSuccess, setIsSuccess] = useState(true);
 
   async function postWaitList(data) {
-    setIsSuccess(true);
-    console.log(data);
     try {
-      const res = await fetch(
+      const res = await axios.post(
         "https://whippy.onrender.com/api/save-wait-list",
-        {
-          method: "POST",
-          body: JSON.stringify(data),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        data
       );
-      if (!res.ok) {
-        console.log("there is error");
-        throw new Error("something is wrong");
-      }
-      const postedData = await res.json();
-      console.log(postedData);
+      console.log(res);
       setIsSuccess(true);
+      setTimeout(() => {
+        setIsSuccess(false);
+      }, 10000);
     } catch (err) {
       console.log(err);
     }
   }
+  const closeModal = () => {
+    setIsSuccess(false);
+  };
   return (
     <div className="app">
-      {isSuccess && <SuccessModal />}
+      {isSuccess && <SuccessModal onCloseModal={closeModal} />}
       <Navbar />
       <Header data={postWaitList} />
       <Features />

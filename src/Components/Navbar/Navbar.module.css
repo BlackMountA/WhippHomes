@@ -1,10 +1,16 @@
 .nav {
   background-color: #f2f7ff;
-  padding: 0.5rem;
+  padding: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 .nav img {
-  width: 2rem;
-  height: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+@media (max-width: 800px) {
+  .nav img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
