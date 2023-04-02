@@ -1,0 +1,37 @@
+.waitlist-section {
+  display: grid;
+  grid-template-columns: 40% auto;
+  column-gap: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 5rem;
+  /* justify-content: space-between; */
+}
+.waitlist-section img {
+  width: 100%;
+  height: 90%;
+}
+.waitlist-section__content {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+.waitlist-section__title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #3a4b69;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.waitlist-section__description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #c28c00;
+}

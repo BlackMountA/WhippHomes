@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+
+header {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.content {
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.heading {
+  color: #3a4b69;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.description {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 29px;
+  color: #000;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.content p span {
+  color: #c28c00;
+}
+.hero-image__container {
+}
+header img {
+  width: 38rem;
+  height: 36rem;
+}
+@media (max-width: 1150px) {
+  header img {
+    width: 34rem;
+    height: 32rem;
+  }
+  .content {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1050px) {
+  header {
+    position: relative;
+  }
+  header img {
+    width: 34rem;
+    height: 34rem;
+  }
+  .content {
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .heading {
+    font-size: 2.3rem;
+  }
+  .hero-image {
+    position: absolute;
+    /* position: relative; */
+    z-index: -20;
+    top: 4rem;
+    right: 0;
+  }
+}
+@media (max-width: 850px) {
+  .content {
+    width: 55%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .content {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    width: 70%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 570px) {
+  .hero-image {
+    position: absolute;
+    /* position: relative; */
+    z-index: -20;
+    top: 2rem;
+    right: 0;
+  }
+  .content {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+/* @media (max-width: 880px) {
+  header {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    https://whippy.onrender.com/api/save-wait-list
+  }
+} */

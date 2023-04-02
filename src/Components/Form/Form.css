@@ -1,0 +1,49 @@
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.7rem;
+  outline: none;
+  font-size: 1rem;
+}
+.form input:focus {
+  outline: none;
+}
+.form label {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.form button {
+  padding: 0.7rem;
+  border-radius: px;
+  border: none;
+  width: 100%;
+  background: #3a4b69;
+  gap: 10px;
+
+  font-family: "Lato", sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 29px;
+  color: #fefefe;
+  text-align: center;
+}
+.invalid-email {
+  color: red;
+}

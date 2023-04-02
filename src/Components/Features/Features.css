@@ -1,0 +1,118 @@
+.features {
+  background-color: blue;
+  background: rgba(58, 75, 105, 0.95);
+  border-radius: 7px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 3rem 0;
+}
+
+.features-title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+}
+.features-description {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 2.5rem auto;
+  text-align: center;
+  color: #ffffff;
+}
+.features div {
+  /* border-radius: px; */
+  /* width: 49%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features button {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 0.7rem;
+  background: #c28c00;
+  border: none;
+  width: 30%;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 29px;
+  color: #fefefe;
+  text-align: center;
+}
+@media (max-width: 1070px) {
+  .features {
+    background-color: blue;
+    background: rgba(58, 75, 105, 0.95);
+    border-radius: 7px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 3rem 0;
+  }
+  .features-description {
+    width: 80%;
+
+    margin: 2.5rem auto;
+  }
+  .features button {
+    width: 45%;
+  }
+}
+@media (max-width: 900px) {
+  .features {
+  }
+  .features-description {
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 1.5rem auto;
+  }
+}
+@media (max-width: 600px) {
+  .features-title {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+
+    margin-top: 1rem;
+  }
+  .features-description {
+    width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin: 1.5rem auto;
+  }
+  .features button {
+    width: 55%;
+  }
+}
+@media (max-width: 500px) {
+  .features {
+    padding: 1.5rem 0;
+  }
+  .features-title {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+
+    margin-top: 1rem;
+  }
+  .features-description {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 1rem auto;
+  }
+  .features button {
+    width: 70%;
+  }
+}

@@ -1,0 +1,10 @@
+.nav {
+  background-color: #f2f7ff;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.nav img {
+  width: 2rem;
+  height: 2rem;
+}
